@@ -8,6 +8,7 @@ import java.util.List;
 
 /**
  * 使用DOM4J解析XML文件
+ * 读取XML文件中的数据
  */
 public class parseXmlDemo {
     public static void main(String[] args) {
@@ -19,7 +20,7 @@ public class parseXmlDemo {
          * 使用dom4j解析XML的大致步骤:
          * 1：创建SAXReader对象
          * 2：使用SAXReader读取xml文档并生成Document对象
-         *    这一步也是dom解析耗时耗资源的地方，因为要先将稳当所有数据读取完毕，
+         *    这一步也是dom解析耗时耗资源的地方，因为要先将xml文档所有数据读取完毕，
          *    并且以一个Document对象形式保存在内存中
          * 3、通过Document对象获取根元素
          * 4、按照XML文档结构从根元素开始逐级获取子元素以达到遍历XML文档数据的目的
